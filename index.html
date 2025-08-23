@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
-    <section class="registration ">
+    <section class="registration registration--close">
       <div class="registration__inner">
         <h1 class="registration__title">Create Your Character</h1>
         <form class="registration__form">
@@ -88,7 +88,7 @@
         </div>
       </article>
     </section>
-    <section class="settings-page">
+    <section class="settings-page settings-page--close">
       <div class="container settings-page__container">
         <div class="settings-page__inner">
           <h3 class="settings-page__title">Player Name:</h3>
@@ -96,6 +96,171 @@
           <input class="settings-page__input input" type="text" />
           <button class="settings-page__button">Edit</button>
         </div>
+      </div>
+    </section>
+    <section class="battle-page">
+      <div class="container battle-page__container">
+        <article class="battle-page__main-block">
+          <div class="battle-page__character-block">
+            <h3 class="battle-page__character-name">Naruto</h3>
+            <img
+              class="battle-page__character-img"
+              src="./assets/images/avatars/1.jpg"
+              alt="avatar"
+            />
+            <div class="progress hero__progress">
+              <div class="progress__fill"></div>
+              <p class="progress__text"></p>
+            </div>
+          </div>
+
+          <div class="battle-settings">
+            <h4 class="battle-settings__instruction">
+              Please pick 1 Attack zone and 2 Defence zones
+            </h4>
+            <div class="battle-settings__zones">
+              <fieldset
+                class="battle-settings__zone battle-settings__zone--attack"
+              >
+                <legend>Attack Zones</legend>
+                <label>
+                  Head
+                  <input
+                    class="battle-settings__input battle-settings__input--attack"
+                    type="checkbox"
+                    id="head"
+                    name="hero"
+                    value="Head"
+                  /> </label
+                ><br />
+
+                <label>
+                  Neck
+                  <input
+                    class="battle-settings__input battle-settings__input--attack"
+                    type="checkbox"
+                    id="neck"
+                    name="hero"
+                    value="Neck"
+                  /> </label
+                ><br />
+
+                <label>
+                  Body
+                  <input
+                    class="battle-settings__input battle-settings__input--attack"
+                    type="checkbox"
+                    id="body"
+                    name="hero"
+                    value="Body"
+                  /> </label
+                ><br />
+
+                <label>
+                  Belly
+                  <input
+                    class="battle-settings__input battle-settings__input--attack"
+                    type="checkbox"
+                    id="belly"
+                    name="hero"
+                    value="Belly"
+                  /> </label
+                ><br />
+
+                <label>
+                  Legs
+                  <input
+                    class="battle-settings__input battle-settings__input--attack"
+                    type="checkbox"
+                    id="legs"
+                    name="hero"
+                    value="Legs"
+                  />
+                </label>
+              </fieldset>
+
+              <fieldset
+                class="battle-settings__zone battle-settings__zone--defence"
+              >
+                <legend>Defence Zones</legend>
+
+                <label>
+                  Head
+                  <input
+                    class="battle-settings__input battle-settings__input--defence"
+                    type="checkbox"
+                    id="head"
+                    name="hero"
+                    value="Head"
+                  /> </label
+                ><br />
+
+                <label>
+                  Neck
+                  <input
+                    class="battle-settings__input battle-settings__input--defence"
+                    type="checkbox"
+                    id="neck"
+                    name="hero"
+                    value="Neck"
+                  /> </label
+                ><br />
+
+                <label>
+                  Body
+                  <input
+                    class="battle-settings__input battle-settings__input--defence"
+                    type="checkbox"
+                    id="body"
+                    name="hero"
+                    value="Body"
+                  /> </label
+                ><br />
+
+                <label>
+                  Belly
+                  <input
+                    class="battle-settings__input battle-settings__input--defence"
+                    type="checkbox"
+                    id="belly"
+                    name="hero"
+                    value="Belly"
+                  /> </label
+                ><br />
+
+                <label>
+                  Legs
+                  <input
+                    class="battle-settings__input battle-settings__input--defence"
+                    type="checkbox"
+                    id="legs"
+                    name="hero"
+                    value="Legs"
+                  />
+                </label>
+              </fieldset>
+            </div>
+            <button disabled class="battle-settings__button button">
+              Attack!
+            </button>
+          </div>
+
+          <div class="battle-page__character-block">
+            <h3 class="battle-page__character-name">Madara</h3>
+            <img
+              class="battle-page__character-img"
+              src="./assets/images/enemies/1.jpg"
+              alt="enemy avatar"
+            />
+            <div class="progress enemy__progress">
+              <div class="progress__fill"></div>
+              <p class="progress__text"></p>
+            </div>
+          </div>
+        </article>
+        
+
+        <div class="battle-page__log-block"></div>
       </div>
     </section>
 

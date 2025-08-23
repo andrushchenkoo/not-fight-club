@@ -246,3 +246,94 @@
   padding: 10px 15px;
   border-radius: 5px;
 }
+.settings-page--close {
+  display: none;
+}
+
+/* BATTLE PAGE*/
+.battle-page {
+}
+
+.battle-page__container {
+  padding-top: 40px;
+}
+.battle-page__main-block {
+  display: flex;
+  justify-content: space-between;
+}
+.battle-page__character-block {
+  text-align: center;
+  min-width: 200px;
+}
+.battle-page__character-name {
+  font-weight: normal;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+.battle-page__character-img {
+  max-width: 200px;
+  height: auto;
+  border: 5px solid black;
+  border-radius: 20px;
+  margin-bottom: 15px;
+}
+.progress {
+  width: 100%;
+  height: 20px;
+  border: 1px solid black;
+  background-color: lightgrey;
+  border-radius: 20px;
+}
+.progress__fill {
+  height: 100%;
+  background-color: brown;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+.progress__text {
+}
+.battle-settings {
+  text-align: center;
+}
+.battle-settings__instruction {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+.battle-settings__zones {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+.battle-settings__zone {
+  border: none;
+  margin-bottom: 40px;
+}
+.battle-settings__zone legend {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+.battle-settings__zone label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.battle-settings__attack-zone {
+}
+.battle-settings__button {
+}
+.battle-page__log-block {
+  font-size: 1.3rem;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 140px;
+  padding: 20px;
+  border-top: 2px solid black ;
+  overflow-y: auto;
+}
+.battle-page__log-block span {
+  font-weight: bold;
+}
