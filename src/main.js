@@ -1,4 +1,7 @@
 import "./style.css";
+import enemy1Img from './assets/images/enemies/1.jpg';
+import enemy2Img from './assets/images/enemies/2.jpg';
+import enemy3Img from './assets/images/enemies/3.jpg';
 
 const myStorage = window.localStorage;
 
@@ -217,20 +220,20 @@ const enemy1 = {
   name: "Madara",
   countAttackZones: 2,
   countDefenceZones: 1,
-  img: "./assets/images/enemies/1.jpg",
+  img: enemy1Img,
 };
 
 const enemy2 = {
   name: "Pain",
   countAttackZones: 1,
   countDefenceZones: 3,
-  img: "./assets/images/enemies/2.jpg",
+  img: enemy2Img,
 };
 const enemy3 = {
   name: "Itachi",
   countAttackZones: 2,
   countDefenceZones: 2,
-  img: "./assets/images/enemies/3.jpg",
+  img: enemy3Img,
 };
 
 const enemies = [enemy1, enemy2, enemy3];
