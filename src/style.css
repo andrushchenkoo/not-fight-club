@@ -4,15 +4,14 @@
   padding: 0;
 }
 
+
+
 .registration {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   min-height: 100vh;
-}
-.registration--close {
-  display: none;
 }
 
 .inner {
@@ -69,6 +68,7 @@
   gap: 10px;
 }
 .header__icon {
+  cursor: pointer;
   width: 30px;
   aspect-ratio: 1 / 1;
   background-repeat: no-repeat;
@@ -91,16 +91,12 @@
   justify-content: center;
   align-items: center;
 }
-.home-page--close {
-  display: none;
-}
+
 .container {
   padding-inline: 30px;
 }
 
-.character-page--close {
-  display: none;
-}
+
 .character-page__container {
   padding-top: 40px;
 }
@@ -246,13 +242,9 @@
   padding: 10px 15px;
   border-radius: 5px;
 }
-.settings-page--close {
-  display: none;
-}
+
 
 /* BATTLE PAGE*/
-.battle-page {
-}
 
 .battle-page__container {
   padding-top: 40px;
@@ -289,8 +281,6 @@
   background-color: brown;
   border-radius: 20px;
   margin-bottom: 10px;
-}
-.progress__text {
 }
 .battle-settings {
   text-align: center;
@@ -334,6 +324,12 @@
   border-top: 2px solid black ;
   overflow-y: auto;
 }
+
 .battle-page__log-block span {
   font-weight: bold;
 }
+
+.close {
+  display: none;
+}
+

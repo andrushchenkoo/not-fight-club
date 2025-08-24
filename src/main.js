@@ -1,17 +1,24 @@
 import "./style.css";
 
+const myStorage = window.localStorage;
+
 //Registration Page
 
 const registrationPage = document.querySelector(".registration");
 const registrationButton = document.querySelector(".registration__button");
 const registrationInput = document.querySelector(".registration__input");
-
-let characterName;
+const homePage = document.querySelector(".home-page");
+const characterPage = document.querySelector(".character-page");
+const settingsPage = document.querySelector(".settings-page");
+const header = document.querySelector(".header");
 
 function registersCharacterName() {
-  characterName = registrationInput.value;
+  const characterName = registrationInput.value;
+  myStorage.setItem("characterName", characterName);
   settingsPlayerName.textContent = characterName;
-  registrationPage.classList.add("registration--close");
+  registrationPage.classList.add("close");
+  homePage.classList.remove("close");
+  header.classList.remove("close");
 }
 
 function controlButtonaVailability() {
@@ -24,6 +31,46 @@ function controlButtonaVailability() {
 
 registrationInput.addEventListener("input", controlButtonaVailability);
 registrationButton.addEventListener("click", registersCharacterName);
+
+//Header Navigation
+const homeIcon = document.querySelector(".header__icon--home");
+const characterIcon = document.querySelector(".header__icon--character");
+const settingsIcon = document.querySelector(".header__icon--settings");
+const pagesNodeList = document.querySelectorAll(".section");
+const sectionName = document.querySelector(".header__page-name");
+
+function goHome() {
+  pagesNodeList.forEach((item) => item.classList.add("close"));
+  homePage.classList.remove("close");
+  sectionName.textContent = "Main";
+}
+function goCharacter() {
+  pagesNodeList.forEach((item) => item.classList.add("close"));
+  characterPage.classList.remove("close");
+  sectionName.textContent = "Character";
+}
+function goSettings() {
+  pagesNodeList.forEach((item) => item.classList.add("close"));
+  settingsPage.classList.remove("close");
+  sectionName.textContent = "Settings";
+}
+
+homeIcon.addEventListener("click", goHome);
+characterIcon.addEventListener("click", goCharacter);
+settingsIcon.addEventListener("click", goSettings);
+
+//Home Page
+
+const fightButton = document.querySelector(".home-page__button");
+const battlePage = document.querySelector(".battle-page");
+
+function fightClick() {
+  pagesNodeList.forEach((item) => item.classList.add("close"));
+  battlePage.classList.remove("close");
+  sectionName.textContent = "Battle";
+}
+
+fightButton.addEventListener("click", fightClick);
 
 // Character Page
 
@@ -157,9 +204,7 @@ const enemy3 = {
 
 const enemies = [enemy1, enemy2, enemy3];
 
-function randomEnemy() {
-  
-}
+function randomEnemy() {}
 
 function shuffle(arr, count) {
   const currentArr = [...arr];
