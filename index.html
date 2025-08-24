@@ -44,10 +44,12 @@
           </div>
 
           <div>
-            <h3 class="character-page__character-name">Sasha</h3>
+            <h3 class="character-page__character-name"></h3>
             <div class="character-page__statistic">
-              <span class="character-page__wins">Wins: 0</span>
-              <span class="character-page__loses">Loses: 0</span>
+              <span class="character-page__wins"
+                >Wins: <span class="wins-value"></span>
+              </span>
+              <span class="character-page__loses">Loses: <span class="loses-value"></span></span>
             </div>
           </div>
         </div>
@@ -102,7 +104,7 @@
       <div class="container battle-page__container">
         <article class="battle-page__main-block">
           <div class="battle-page__character-block">
-            <h3 class="battle-page__character-name">Naruto</h3>
+            <h3 class="battle-page__character-name"></h3>
             <img
               class="battle-page__character-img"
               src="./assets/images/avatars/1.jpg"
@@ -244,11 +246,10 @@
               Attack!
             </button>
           </div>
-
           <div class="battle-page__character-block">
-            <h3 class="battle-page__character-name">Madara</h3>
+            <h3 class="battle-page__character-name battle-page__character-name--enemy">Madara</h3>
             <img
-              class="battle-page__character-img"
+              class="battle-page__character-img battle-page__character-img--enemy"
               src="./assets/images/enemies/1.jpg"
               alt="enemy avatar"
             />
@@ -258,9 +259,14 @@
             </div>
           </div>
         </article>
-        
-
         <div class="battle-page__log-block"></div>
+
+        <article class="end-board close">
+          <div class="end-board__panel">
+            <p class="end-board__text">sadfsssssssssss</p>
+            <button class="end-board__close"></button>
+          </div>
+        </article>
       </div>
     </section>
 
